@@ -15,15 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/pcss', function () {
     return view('pcss');
-});
+})->name('pagina1');
 
 Route::get('/pimg', function () {
     return view('pimg');
-});
+})->name('pagina2');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

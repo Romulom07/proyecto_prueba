@@ -35,6 +35,11 @@
                     @endauth
                 </div>
             @endif
+            <ul>
+            <li><a href="{{ route('welcome') }}">Inicio</a></li>
+            <li><a href="{{ route('pagina1') }}">Página 1</a></li>
+            <li><a href="{{ route('pagina2') }}">Página 2</a></li>
+            </ul>
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">

@@ -7,6 +7,11 @@
 	
 </head>
 <body>
+<ul>
+<li><a href="{{ route('welcome') }}">Inicio</a></li>
+<li><a href="{{ route('pagina1') }}">Página 1</a></li>
+<li><a href="{{ route('pagina2') }}">Página 2</a></li>
+</ul>    
 <img src="https://www.consumoteca.com/wp-content/uploads/Restaurante-cafeter%C3%ADa.jpeg" >
 		
     <footer>
