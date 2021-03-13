@@ -21,6 +21,10 @@ Route::get('/romulo', function () {
     return view('romulo');
 });
 
+Route::get('/pbasic', function () {
+    return view('pbasic');
+});
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
