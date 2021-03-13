@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,17 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/', [PageController::class,'welcome'])->name('welcome'); 
 
-Route::get('/pcss', function () {
-    return view('pcss');
-})->name('pagina1');
+Route::get('/pagnueva', [PageController::class,'pagina1'])->name('pagina1'); 
 
-Route::get('/pimg', function () {
-    return view('pimg');
-})->name('pagina2');
+Route::get('/pimg', [PageController::class,'pagina2'])->name('pagina2'); 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
