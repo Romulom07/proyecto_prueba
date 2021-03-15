@@ -18,7 +18,7 @@ class PageController extends Controller
 
         $animales = ['perro', 'gato', 'pez', 'elefante', 'tigre'];
 
-        $edad = 10;
+        $edad = 33;
 
         return view('pcss')->with('titulo', $titulo)
                            ->with('animales', $animales)
