@@ -9,6 +9,7 @@
 <body>
 <ul>
 @include('layouts.menu')
+
 <h1>{{ $titulo }}</h1> 
 <img src="https://www.consumoteca.com/wp-content/uploads/Restaurante-cafeter%C3%ADa.jpeg" >
 		

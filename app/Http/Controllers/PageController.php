@@ -15,6 +15,7 @@ class PageController extends Controller
     public function pagina1()
     {
         $titulo = "Practicando CSS";
+        
         $animales = ['perro', 'gato', 'pez', 'elefante', 'tigre'];
 
         return view('pcss')->with('titulo', $titulo)

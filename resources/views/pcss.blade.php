@@ -7,9 +7,12 @@
 </head>
 <body> 
 @include('layouts.menu')
-@foreach ($animales as $animal)
-    <p>{{ $animal }}</p>
-@endforeach
+
+ @for ($i = 0; $i < 5; $i++)
+    The current value is {{ $i }}
+        <p> {{ $animales[$i] }} </p>
+@endfor
+
 <h1>{{ $titulo }}</h1>
 <img src="https://www.consumoteca.com/wp-content/uploads/Restaurante-cafeter%C3%ADa.jpeg" >
 <img src="https://www.elindependiente.com/wp-content/uploads/2019/07/cafeteriasantader.jpg" >	
