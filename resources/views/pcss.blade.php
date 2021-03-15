@@ -13,6 +13,12 @@
         <p> {{ $animales[$i] }} </p>
 @endfor
 
+@if ($edad >= 18)
+    <p>Eres un adulto puedes entrar.</p>
+@else
+    <p>Eres un niño no estás autorizado</p>
+@endif
+
 <h1>{{ $titulo }}</h1>
 <img src="https://www.consumoteca.com/wp-content/uploads/Restaurante-cafeter%C3%ADa.jpeg" >
 <img src="https://www.elindependiente.com/wp-content/uploads/2019/07/cafeteriasantader.jpg" >	

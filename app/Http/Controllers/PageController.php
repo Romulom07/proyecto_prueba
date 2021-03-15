@@ -15,11 +15,14 @@ class PageController extends Controller
     public function pagina1()
     {
         $titulo = "Practicando CSS";
-        
+
         $animales = ['perro', 'gato', 'pez', 'elefante', 'tigre'];
 
+        $edad = 10;
+
         return view('pcss')->with('titulo', $titulo)
-                           ->with('animales', $animales);
+                           ->with('animales', $animales)
+                           ->with('edad', $edad);
     }
     public function pagina2()
     {
