@@ -8,15 +8,23 @@ class PageController extends Controller
 {
     public function welcome()
     {
-        return view('welcome');
+        $titulo = "Bienvenidos a mi web";
+
+        return view('welcome')->with('titulo', $titulo);
     }
     public function pagina1()
     {
-        return view('pcss');
+        $titulo = "Practicando CSS";
+        $animales = ['perro', 'gato', 'pez', 'elefante', 'tigre'];
+
+        return view('pcss')->with('titulo', $titulo)
+                           ->with('animales', $animales);
     }
     public function pagina2()
     {
-        return view('pimg');
+        $titulo = "Practicando IMG";
+
+        return view('pimg')->with('titulo', $titulo);
     }
 }
 
